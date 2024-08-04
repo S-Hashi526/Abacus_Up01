@@ -4,21 +4,24 @@ ruby '2.7.6'
 
 gem 'rails', '~> 5.1.6'
 gem 'puma', '~> 3.7'
-gem 'sass-rails', '~> 5.0'          # SCSS(Syntactically Awesome StyleSheet：効率的にCSSが書ける言語)
+gem 'sass-rails', '~> 5.0'            # SCSS(Syntactically Awesome StyleSheet：効率的にCSSが書ける言語)
 gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.2'
 gem 'jquery-rails'
 gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
 gem 'bootstrap-sass'
-gem 'bootstrap-will_paginate'       # ページネーション
-gem 'bcrypt'                        # 暗号化 "Use ActiveModel has_secure_password"
+gem 'bootstrap-will_paginate'         # ページネーション
+gem 'bcrypt'                          # 暗号化 "Use ActiveModel has_secure_password"
 gem 'faker'
-gem 'rails-i18n'                    # 日本語化
-gem 'will_paginate'                 # ページネーション
-gem 'rounding'                      # 時間だけでなく、数値全般を扱える
-gem 'roo'                           # csvファイル読込用（Excel, CSV, OpenOffice, GoogleSpreadSheetを開くことが可能）
-gem 'devise'                        # ログイン機能
+gem 'rails-i18n'                      # 日本語化
+gem 'will_paginate'                   # ページネーション
+gem 'rounding'                        # 時間だけでなく、数値全般を扱える
+gem 'roo'                             # csvファイル読込用（Excel, CSV, OpenOffice, GoogleSpreadSheetを開くことが可能）
+gem 'devise'                          # ログイン機能
+gem 'omniauth-line'                   # LINEログイン
+gem 'omniauth-rails_csrf_protection'  # トークン保護
+gem 'dotenv-rails'
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
